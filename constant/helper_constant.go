@@ -6,8 +6,8 @@ const (
 	LoggerPrefixWarning = "[ WARNING ]"
 	LoggerPrefixError   = "[ ERROR ]"
 
-	LoggerFileDebug   = "debug.log"
-	LoggerFileInfo    = "info.log"
-	LoggerFileWarning = "warning.log"
-	LoggerFileError   = "error.log"
+	LoggerFileDebug   = "logger/debug.log"
+	LoggerFileInfo    = "logger/info.log"
+	LoggerFileWarning = "logger/warning.log"
+	LoggerFileError   = "logger/error.log"
 )
