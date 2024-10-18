@@ -2,10 +2,13 @@ package helper
 
 type Helper struct {
 	LoggerHelper LoggerHelper
+	CacheHelper  CacheHelper
 }
 
 func NewHelper() Helper {
+	logger := NewLoggerHelper()
 	return Helper{
-		LoggerHelper: NewLoggerHelper(),
+		LoggerHelper: logger,
+		CacheHelper:  NewCacheHelper(logger),
 	}
 }
