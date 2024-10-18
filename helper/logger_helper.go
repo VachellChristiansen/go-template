@@ -69,6 +69,12 @@ func (h *LoggerHelperImpl) OpenOutputFile() {
 	switch h.prefix {
 	case 'd':
 		path = filepath.Join(wd, constant.LoggerFileDebug)
+	case 'i':
+		path = filepath.Join(wd, constant.LoggerFileInfo)
+	case 'w':
+		path = filepath.Join(wd, constant.LoggerFileWarning)
+	case 'e':
+		path = filepath.Join(wd, constant.LoggerFileError)
 	}
 
 	file, err := os.OpenFile(path, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
